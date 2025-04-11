@@ -1,0 +1,9 @@
+# LootChest refill schedule configuration
+
+mode: interval   # "interval" for fixed intervals, or "times" for specific daily times.
+interval: 3600   # (Used in interval mode) Refill interval in seconds. Here, 3600s = 1 hour.
+times:           # (Used in times mode) Daily times (24h format) when refills should occur.
+  - "12:00"
+  - "18:00"
+# Note: If mode is "interval", the 'times' list is ignored. If mode is "times", the 'interval' is ignored.
+# The plugin will determine the next refill based on this schedule when /lootchest begin is invoked.

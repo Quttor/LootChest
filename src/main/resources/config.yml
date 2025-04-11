@@ -1,0 +1,24 @@
+# LootChest configuration file
+refill-message: "§eAll loot chests have been refilled!"
+loot-tables:
+  example:
+    # An example loot table named "example"
+    items:
+      - type: DIAMOND_SWORD
+        min: 1
+        max: 1
+        enchantments:
+          SHARPNESS: 5
+          UNBREAKING: 3
+      - type: GOLDEN_APPLE
+        min: 2
+        max: 4
+      - type: IRON_INGOT
+        min: 3
+        max: 8
+        # (More items can be added as needed)
+  # Add more loot tables below as needed, using unique IDs for each.
+
+# List of currently active loot chest locations and their assigned loot table.
+# This list is managed by the plugin; use /lootchest set and /lootchest unset commands to modify.
+chests: []

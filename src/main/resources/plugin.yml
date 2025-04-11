@@ -1,0 +1,19 @@
+name: LootChest
+main: quttor.lootchest.LootChestPlugin
+version: 1.0.0
+api-version: 1.20  # using Minecraft 1.20+ API (compatible with 1.21.4)
+description: >
+  Allows admins to mark chests/barrels as loot chests that automatically refill on a schedule.
+author: Quttor
+softdepend: [PlaceholderAPI]
+
+commands:
+  lootchest:
+    description: Manage loot chests (set/unset and schedule controls)
+    usage: "/lootchest <set|unset|begin|pause> [lootTableId]"
+    permission: lootchest.admin
+
+permissions:
+  lootchest.admin:
+    description: Permission to use all LootChest admin commands.
+    default: op
